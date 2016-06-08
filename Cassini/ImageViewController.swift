@@ -121,5 +121,8 @@ class ImageViewController: UIViewController, UIScrollViewDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         scrollView.addSubview(imageView)
+        navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem()
+        navigationItem.leftItemsSupplementBackButton = true
+        navigationItem.leftBarButtonItem?.title = "Cassini"
     }
 }

@@ -52,8 +52,8 @@ class CassiniViewController: UIViewController, UISplitViewControllerDelegate
     // this is so we can prevent an empty detail from collapsing on top of our master
     // see split view delegate method below
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func awakeFromNib() {
+        super.awakeFromNib()
         splitViewController?.delegate = self
     }
         
